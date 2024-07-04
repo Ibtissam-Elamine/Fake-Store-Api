@@ -45,10 +45,10 @@ public class SalesforceAuthenticator {
     private MultiValueMap<String, String> getParams() {
 
         MultiValueMap<String, String> params= new LinkedMultiValueMap<>();
-        params.add("username", "ibtibtissamamine@resourceful-panda-f3uzxi.com");
-        params.add("password", "salesforce2024G6RcnkcsHImFhHAwEyqnTWHh");
-        params.add("client_secret", "BE40DF2742F893263789D92D323A2BC5B710EA1D25D903D1203285F4F9A65BE2");
-        params.add("client_id", "3MVG9k02hQhyUgQCZ0BTrLSiEyila_SOibZ8uAs_jzySwQ3QjFNxAY0FzKp47YeKtZJ8N1DNXkfyjz5gGPS66");
+        params.add("username", "");
+        params.add("password", "");
+        params.add("client_secret", "");
+        params.add("client_id", "");
         params.add("grant_type","password");
 
         return params;
