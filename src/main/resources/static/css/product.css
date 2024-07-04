@@ -1,0 +1,236 @@
+/*Google Fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color: rgb(168, 182, 194) ;
+    --bg-color : rgb(234, 233, 232);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;/*pour changer style d'escriture du text*/
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 249, 249);
+
+}
+
+/* Styles pour la barre de tri */
+.sort-bar1 {
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin-bottom: 20px; /* Augmentez la marge en bas pour l'espace */
+    margin-left: 60px;
+    margin-right: 20px;
+    border-radius: 10px; /* Ajoutez des coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour un aspect en relief */
+}
+
+.sort-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section1 {
+    font-size: 18px; /* Augmentez la taille du texte */
+    font-weight: bold; /* Ajoutez un peu de poids au texte */
+    color: rgba(0, 0, 0, 0.8); /* Assombrissez légèrement la couleur du texte */
+}
+
+.tri1{
+    display: flex;
+    align-items: center;
+}
+
+.label1 {
+    font-size: 16px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+.select-tri1 {
+    padding: 8px; /* Augmentez un peu la taille de la zone de sélection */
+    border-radius: 5px; /* Ajoutez des coins arrondis à la zone de sélection */
+    border: 1px solid rgba(0, 0, 0, 0.4); /* Ajoutez une bordure légère */
+    background-color: white; /* Assurez-vous que le fond de la zone de sélection est blanc */
+    color: rgba(0, 0, 0, 0.8); /* Assombrissez légèrement la couleur du texte */
+    cursor: pointer; /* Changez le curseur au survol */
+}
+
+.select-tri1:hover {
+    border-color: rgba(0, 0, 0, 0.6); /* Assombrissez légèrement la bordure au survol */
+}
+/*Fin*/
+
+.container1 {
+    /* Added width property */
+    width: 100%;
+    padding: 30px 0px 10px 0px;
+    margin: auto;
+}
+.container1 p{
+    /*text-align: center;*/
+    margin: 30px 0px 10px 0px;
+    color: rgba(0, 0, 0, 6);
+    letter-spacing: 2px;/*espace entre les lettres*/
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.container1 .role1{
+    /*margin: 30px 0px 10px 0px;*/
+    color: rgba(0, 0, 0, 6);
+    letter-spacing: 2px;/*espace entre les lettres*/
+    margin-top: 10px;
+}
+.container1 h1{
+    text-align: center;
+    margin-bottom: 20px;/*masafa entre lui o dakchi lli lteht*/
+    font-size: 2.5rem;
+}
+
+
+/*hada hwa lli kayred lina les cards horizontalement*/
+.wrapper1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px; /* Add gap between cards */
+}
+.get-bar {
+    /*background-color: var(--color);  Couleur de fond plus foncée */
+    background-color: black;
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 15px; /* Marge en bas */
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.get-content {
+    font-size: 14px; /* Taille de police */
+}
+
+.cards1 {
+    position: relative;
+    background-color: var(--bg-color);
+    padding: 40px;
+    width: 300px; /* Largeur fixe pour toutes les cartes */
+    height: 400px; /* Hauteur fixe pour toutes les cartes */
+    margin: 10px;  /*Ajouter une marge à toutes les cartes */
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(112, 106, 106, 0.1);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* margin-bottom: 30px; */
+}
+
+.cards1:hover {
+   transform: scale(1.05); /* Augmentez légèrement la taille de la carte au survol */
+    box-shadow: 0 0 1.2em rgba(112, 106, 106, 0.2); /* Ajoutez une ombre légèrement plus prononcée */
+}
+.icons {
+    position: absolute;
+    top: 0; /* Aligner les icônes en haut */
+    left: 0; /* Aligner les icônes à gauche */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px; /* Ajouter un peu d'espace autour des icônes */
+    z-index: 1; /* Assurer que les icônes sont au-dessus du contenu de la carte */
+    margin: 10px;;
+    margin-top: 40px;
+}
+
+.icons li {
+    height: 30px;
+    width: 30px;
+    background: var(--color);
+    margin: 3px 0; /* Espacement vertical entre les icônes */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: transform 0.3s; /* Ajouter une transition pour l'effet de zoom */
+}
+
+.icons li a {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.icons li a:hover{
+    transform: scale(1.1);
+}
+.wrapper1 .cards1:first-child {
+    margin-left: 60px; /* Add margin to the left side of the first card */
+}
+
+.profile-img1 {
+    width: 230px;
+    height: 230px;
+    background-size:cover;
+    background-position:center center;
+    display: block;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img1 img {
+    width: 100%;
+    height: 100%;
+    margin-top : -40px;
+    margin-bottom: -20px;
+    object-fit: cover; /* Cette propriété rendra l'image non rendue en ajustant sa taille pour remplir son conteneur tout en conservant son ratio d'aspect */
+}
+.content1{
+    margin-top:1px ;
+    text-align: center;
+}
+.content1 h4{
+    font-size: 1rem;
+    margin-top: -20px;
+}
+.container1 .fa{
+    margin-right: 8px;
+}
+.content1 .buttons1{
+    display: flex;
+}
+.buttons1 .card-btn1{
+    display: flex;
+    transform: scale(1.1);
+    margin-top: -20px;
+}
+.card-btn1 {
+    background-color: var(--color);/*color d background d btn*/
+    color: rgb(242, 242, 242);/*color d text d btn*/
+    font-size: 0.9rem;/*taille d btn*/
+    text-transform: uppercase; /*pour rendre tout le text en majuscule*/
+    font-weight: 600;/*niveau d bold pour le text*/
+    border: none; /*kayhyd lborder*/
+    padding: .3em;
+    border-radius: .5em; /*t9wisa*/
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+/*barre de sort */
+/*debut*/
+
+.slide-container1{
+    max-width: 1120px;
+    width: 100%;
+    /*background-color: gray;*/
+}
